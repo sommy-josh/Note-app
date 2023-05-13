@@ -1,0 +1,21 @@
+{% load static %}
+<form method ="POST" action="">
+  <link rel="stylesheet" href="{% static 'style.css '%}">
+<div class="container">
+  <div class="header"><h1>Django-Note App</h1>
+    <nav class="navbar navbar-default navbar-inverse">
+
+      
+    <a href="{% url 'add' %}"><h1 style="text-align: right; color: blue; ">Add Note</h1></a>
+  </div>
+{% for notes in note_book reversed %}
+<div class="area">
+  <p>{{notes.title}}</p>
+  <a href="{% url 'delete_note' notes.pk%}"><h1 style="text-align: right; color: red; gigg">Delete</h1></a>
+  
+  <p>{{notes.notes}}</p>
+</div>
+{% endfor %}
+</div>
+</form>
+

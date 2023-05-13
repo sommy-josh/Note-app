@@ -1,0 +1,38 @@
+.container{
+    background-color: ccc;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.area{
+    color: #0000ff;
+    background-color:black;
+    text-decoration: none;
+}
+.run{
+    margin:20px 0px ;
+}
+.btn{
+    background-color:white;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    
+}
+.title{
+    color: white;
+}
+.note{
+    color: black;
+}
+p{
+    color: white;
+}
+.ad{
+    background-color: grey;
+}
